@@ -1,0 +1,14 @@
+.users-form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.user-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.current-user {
+  margin-left: 1rem;
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { PrimeReactProvider } from "primereact/api";
+import { BrowserRouter } from "react-router-dom";
 import App from "./App.jsx";
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 import "primeicons/primeicons.css";
@@ -12,8 +13,10 @@ const value = {
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <PrimeReactProvider value={value}>
-      <App />
-    </PrimeReactProvider>
+    <BrowserRouter>
+      <PrimeReactProvider value={value}>
+        <App />
+      </PrimeReactProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
